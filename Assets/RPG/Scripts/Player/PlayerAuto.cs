@@ -7,6 +7,8 @@ public class PlayerAuto : MonoBehaviour
     [SerializeField] private float attackRange = 2f;
     [SerializeField, Range(0f, 1f)] float hitFraction = 0.45f;
     [SerializeField] private float attackCooldown = 0.15f;
+    [SerializeField] private float attackDamage = 50f;
+    [SerializeField] private float turnSpeed = 360f;
 
     [Header("참조")]
     [SerializeField] private Animator animator;
@@ -75,6 +77,19 @@ public class PlayerAuto : MonoBehaviour
         if (offset.sqrMagnitude > (attackRange * attackRange))
             return offset.normalized;
 
+        // 공격사거리 각도내에 부드럽게 위치하도록 회전
+        if(offset.sqrMagnitude > 0.001f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(offset, Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
+
+            // 각도 10도 이내
+            if(Quaternion.Angle(transform.rotation, targetRotation) > 10)
+            {
+                return Vector3.zero;
+            }
+        }
+
         // 공격사거리 안
         // 공격 시도
         if(Time.time >= nextAttackTime)
@@ -88,7 +103,7 @@ public class PlayerAuto : MonoBehaviour
         isAttacking = true;
         hitChecked = false;
 
-        transform.rotation = Quaternion.LookRotation(offset);
+        transform.rotation = Quaternion.LookRotation(offset, Vector3.up);
 
         animator.CrossFadeInFixedTime("Base Layer.AutoAttack", 0.05f, 0, 0f);
     }
@@ -99,7 +114,7 @@ public class PlayerAuto : MonoBehaviour
             ? animator.GetNextAnimatorStateInfo(0)
             : animator.GetCurrentAnimatorStateInfo(0);
 
-        if (state.IsName("Base Layer.AutoAttack") == false)
+        if (state.IsTag("BasicAttack") == false)
             return;
 
         float progress = state.normalizedTime;
@@ -112,9 +127,9 @@ public class PlayerAuto : MonoBehaviour
             {
                 Vector3 offset = Vector3.ProjectOnPlane(target.transform.position - transform.position, Vector3.up);
 
-                if (offset.sqrMagnitude < (attackRange * attackRange))
+                if (offset.sqrMagnitude <= (attackRange * attackRange))
                 {
-                    target.TakeDamage(50);
+                    target.TakeDamage(attackDamage);
                 }
             }
         }

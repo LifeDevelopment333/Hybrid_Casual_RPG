@@ -1338,8 +1338,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAuto
   detectionRadius: 18
   attackRange: 2
-  attackDuration: 1
+  hitFraction: 0.45
   attackCooldown: 0.15
+  attackDamage: 50
+  turnSpeed: 720
   animator: {fileID: 1017044019}
 --- !u!1 &1056749857
 GameObject:
