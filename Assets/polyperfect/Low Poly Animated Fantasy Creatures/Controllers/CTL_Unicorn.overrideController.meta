@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d4c573f658d5daa4aa1686859998af50
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Unicorn.overrideController
+  uploadId: 1030560

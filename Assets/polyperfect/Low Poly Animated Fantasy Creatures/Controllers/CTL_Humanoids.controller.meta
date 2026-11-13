@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bd5753fd127338e4aa33eabf4beb3604
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Humanoids.controller
+  uploadId: 1030560

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f7ad7d50781f0c540be7c02f59e8e450
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Centaur_Scout_Female.overrideController
+  uploadId: 1030560

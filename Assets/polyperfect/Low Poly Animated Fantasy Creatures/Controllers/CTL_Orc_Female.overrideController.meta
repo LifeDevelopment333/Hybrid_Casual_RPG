@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 177c7b5ae5e9bec4baaac63fe739140f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Orc_Female.overrideController
+  uploadId: 1030560

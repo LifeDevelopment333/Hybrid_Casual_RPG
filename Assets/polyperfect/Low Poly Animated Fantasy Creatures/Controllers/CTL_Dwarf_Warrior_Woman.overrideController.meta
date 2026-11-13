@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fd30e15fadb52c0449fd52c517b1dbb5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Dwarf_Warrior_Woman.overrideController
+  uploadId: 1030560

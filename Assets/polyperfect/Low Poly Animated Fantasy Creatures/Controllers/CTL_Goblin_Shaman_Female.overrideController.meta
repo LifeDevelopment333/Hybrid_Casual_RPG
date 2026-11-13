@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 997ad1a6803a8a845b8e316753c5911c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Goblin_Shaman_Female.overrideController
+  uploadId: 1030560

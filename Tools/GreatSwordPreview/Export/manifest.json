@@ -1,0 +1,481 @@
+{
+  "materials": [
+    {
+      "name": "RPG Character Body Original PBR",
+      "images": [
+        "HeadColor4K.png",
+        "RPG_Character_metallic.png",
+        "RPG_Character_roughness.png",
+        "RPG_Character_normal.png"
+      ]
+    },
+    {
+      "name": "RPG Character Clean Face and Hair - Full Resolution",
+      "images": [
+        "HeadColor4K.png"
+      ]
+    },
+    {
+      "name": "Lip corner clean skin",
+      "images": [
+        "LipColor.png"
+      ]
+    }
+  ],
+  "sword_materials": [
+    {
+      "name": "Sword | Brushed warm steel",
+      "color": [
+        0.38999998569488525,
+        0.4050000011920929,
+        0.38999998569488525,
+        1.0
+      ],
+      "metallic": 0.8199999928474426,
+      "roughness": 0.3400000035762787
+    },
+    {
+      "name": "Sword | Polished bevel",
+      "color": [
+        0.6399999856948853,
+        0.6499999761581421,
+        0.6100000143051147,
+        1.0
+      ],
+      "metallic": 0.8600000143051147,
+      "roughness": 0.25
+    },
+    {
+      "name": "Sword | Recessed fuller",
+      "color": [
+        0.13500000536441803,
+        0.15000000596046448,
+        0.15000000596046448,
+        1.0
+      ],
+      "metallic": 0.7699999809265137,
+      "roughness": 0.41999998688697815
+    },
+    {
+      "name": "Sword | Aged bronze fittings",
+      "color": [
+        0.3199999928474426,
+        0.24500000476837158,
+        0.10000000149011612,
+        1.0
+      ],
+      "metallic": 0.7400000095367432,
+      "roughness": 0.3799999952316284
+    },
+    {
+      "name": "Sword | Bronze bevel",
+      "color": [
+        0.5299999713897705,
+        0.4099999964237213,
+        0.1899999976158142,
+        1.0
+      ],
+      "metallic": 0.7799999713897705,
+      "roughness": 0.2800000011920929
+    },
+    {
+      "name": "Sword | Olive guard inset",
+      "color": [
+        0.10499999672174454,
+        0.12999999523162842,
+        0.04699999839067459,
+        1.0
+      ],
+      "metallic": 0.5,
+      "roughness": 0.4300000071525574
+    },
+    {
+      "name": "Sword | Dark brown leather",
+      "color": [
+        0.054999999701976776,
+        0.024000000208616257,
+        0.012000000104308128,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.800000011920929
+    },
+    {
+      "name": "Sword | Leather wrap edges",
+      "color": [
+        0.10499999672174454,
+        0.04899999871850014,
+        0.02199999988079071,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.699999988079071
+    }
+  ],
+  "actions": [
+    {
+      "name": "GS | draw a great sword 1",
+      "frames": [
+        1.0,
+        15.0
+      ]
+    },
+    {
+      "name": "GS | draw a great sword 2",
+      "frames": [
+        1.0,
+        24.0
+      ]
+    },
+    {
+      "name": "GS | great sword 180 turn",
+      "frames": [
+        1.0,
+        25.0
+      ]
+    },
+    {
+      "name": "GS | great sword 180 turn (2)",
+      "frames": [
+        1.0,
+        18.0
+      ]
+    },
+    {
+      "name": "GS | great sword attack",
+      "frames": [
+        1.0,
+        37.0
+      ]
+    },
+    {
+      "name": "GS | great sword blocking",
+      "frames": [
+        1.0,
+        16.0
+      ]
+    },
+    {
+      "name": "GS | great sword blocking (2)",
+      "frames": [
+        1.0,
+        30.0
+      ]
+    },
+    {
+      "name": "GS | great sword blocking (3)",
+      "frames": [
+        1.0,
+        16.0
+      ]
+    },
+    {
+      "name": "GS | great sword casting",
+      "frames": [
+        1.0,
+        145.0
+      ]
+    },
+    {
+      "name": "GS | great sword crouching",
+      "frames": [
+        1.0,
+        21.0
+      ]
+    },
+    {
+      "name": "GS | great sword crouching (2)",
+      "frames": [
+        1.0,
+        22.0
+      ]
+    },
+    {
+      "name": "GS | great sword crouching (3)",
+      "frames": [
+        1.0,
+        56.0
+      ]
+    },
+    {
+      "name": "GS | great sword crouching (4)",
+      "frames": [
+        1.0,
+        12.0
+      ]
+    },
+    {
+      "name": "GS | great sword crouching (5)",
+      "frames": [
+        1.0,
+        43.0
+      ]
+    },
+    {
+      "name": "GS | great sword crouching (6)",
+      "frames": [
+        1.0,
+        15.0
+      ]
+    },
+    {
+      "name": "GS | great sword high spin attack",
+      "frames": [
+        1.0,
+        57.0
+      ]
+    },
+    {
+      "name": "GS | great sword idle",
+      "frames": [
+        1.0,
+        61.0
+      ]
+    },
+    {
+      "name": "GS | great sword idle (2)",
+      "frames": [
+        1.0,
+        109.0
+      ]
+    },
+    {
+      "name": "GS | great sword idle (3)",
+      "frames": [
+        1.0,
+        109.0
+      ]
+    },
+    {
+      "name": "GS | great sword idle (4)",
+      "frames": [
+        1.0,
+        112.0
+      ]
+    },
+    {
+      "name": "GS | great sword idle (5)",
+      "frames": [
+        1.0,
+        228.0
+      ]
+    },
+    {
+      "name": "GS | great sword impact",
+      "frames": [
+        1.0,
+        27.0
+      ]
+    },
+    {
+      "name": "GS | great sword impact (2)",
+      "frames": [
+        1.0,
+        37.0
+      ]
+    },
+    {
+      "name": "GS | great sword impact (3)",
+      "frames": [
+        1.0,
+        39.0
+      ]
+    },
+    {
+      "name": "GS | great sword impact (4)",
+      "frames": [
+        1.0,
+        21.0
+      ]
+    },
+    {
+      "name": "GS | great sword impact (5)",
+      "frames": [
+        1.0,
+        30.0
+      ]
+    },
+    {
+      "name": "GS | great sword jump",
+      "frames": [
+        1.0,
+        20.0
+      ]
+    },
+    {
+      "name": "GS | great sword jump (2)",
+      "frames": [
+        1.0,
+        28.0
+      ]
+    },
+    {
+      "name": "GS | great sword jump attack",
+      "frames": [
+        1.0,
+        66.0
+      ]
+    },
+    {
+      "name": "GS | great sword kick",
+      "frames": [
+        1.0,
+        46.0
+      ]
+    },
+    {
+      "name": "GS | great sword kick (2)",
+      "frames": [
+        1.0,
+        52.0
+      ]
+    },
+    {
+      "name": "GS | great sword power up",
+      "frames": [
+        1.0,
+        94.0
+      ]
+    },
+    {
+      "name": "GS | great sword run",
+      "frames": [
+        1.0,
+        23.0
+      ]
+    },
+    {
+      "name": "GS | great sword run (2)",
+      "frames": [
+        1.0,
+        19.0
+      ]
+    },
+    {
+      "name": "GS | great sword slash",
+      "frames": [
+        1.0,
+        39.0
+      ]
+    },
+    {
+      "name": "GS | great sword slash (2)",
+      "frames": [
+        1.0,
+        107.0
+      ]
+    },
+    {
+      "name": "GS | great sword slash (3)",
+      "frames": [
+        1.0,
+        56.0
+      ]
+    },
+    {
+      "name": "GS | great sword slash (4)",
+      "frames": [
+        1.0,
+        55.0
+      ]
+    },
+    {
+      "name": "GS | great sword slash (5)",
+      "frames": [
+        1.0,
+        44.0
+      ]
+    },
+    {
+      "name": "GS | great sword slide attack",
+      "frames": [
+        1.0,
+        65.0
+      ]
+    },
+    {
+      "name": "GS | great sword strafe",
+      "frames": [
+        1.0,
+        34.0
+      ]
+    },
+    {
+      "name": "GS | great sword strafe (2)",
+      "frames": [
+        1.0,
+        36.0
+      ]
+    },
+    {
+      "name": "GS | great sword strafe (3)",
+      "frames": [
+        1.0,
+        18.0
+      ]
+    },
+    {
+      "name": "GS | great sword strafe (4)",
+      "frames": [
+        1.0,
+        20.0
+      ]
+    },
+    {
+      "name": "GS | great sword turn",
+      "frames": [
+        1.0,
+        23.0
+      ]
+    },
+    {
+      "name": "GS | great sword turn (2)",
+      "frames": [
+        1.0,
+        26.0
+      ]
+    },
+    {
+      "name": "GS | great sword walk",
+      "frames": [
+        1.0,
+        42.0
+      ]
+    },
+    {
+      "name": "GS | great sword walk (2)",
+      "frames": [
+        1.0,
+        40.0
+      ]
+    },
+    {
+      "name": "GS | reference pose (Maria)",
+      "frames": [
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "name": "GS | spell cast",
+      "frames": [
+        1.0,
+        35.0
+      ]
+    },
+    {
+      "name": "GS | two handed sword death",
+      "frames": [
+        1.0,
+        73.0
+      ]
+    },
+    {
+      "name": "GS | two handed sword death (2)",
+      "frames": [
+        1.0,
+        76.0
+      ]
+    }
+  ]
+}

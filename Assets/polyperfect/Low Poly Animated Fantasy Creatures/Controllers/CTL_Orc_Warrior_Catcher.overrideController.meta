@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 46d0a2ea122bbd5419521eae12b9cfd5
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Orc_Warrior_Catcher.overrideController
+  uploadId: 1030560

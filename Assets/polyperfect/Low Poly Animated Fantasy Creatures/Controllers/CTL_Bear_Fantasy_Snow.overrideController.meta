@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 81d6cce5193565c4b96a4d54ece8869e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Bear_Fantasy_Snow.overrideController
+  uploadId: 1030560

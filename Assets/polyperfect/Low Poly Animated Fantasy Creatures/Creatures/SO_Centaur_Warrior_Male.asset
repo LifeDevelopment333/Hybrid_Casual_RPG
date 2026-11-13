@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8920c7ee44c9cf429f0dd70a3ec41ea, type: 3}
+  m_Name: SO_Centaur_Warrior_Male
+  m_EditorClassIdentifier: 
+  DisplayName: Centaur Warrior
+  modelPrefab: {fileID: 5655711056447162960, guid: 6ed22d169dfd9da42bf479baba97d227, type: 3}
+  previewImage: {fileID: 21300000, guid: 11e9f9f75f8d8c646a8106d7e647e67c, type: 3}
+  overrideAnimator: {fileID: 22100000, guid: f28851b8e867cb74089ade51b93fcff9, type: 2}
+  scale: 1

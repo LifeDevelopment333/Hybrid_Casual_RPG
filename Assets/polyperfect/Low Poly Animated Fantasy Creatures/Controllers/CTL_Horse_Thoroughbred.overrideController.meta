@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 799185df70bc8df4c81d09ee0b06c030
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Horse_Thoroughbred.overrideController
+  uploadId: 1030560

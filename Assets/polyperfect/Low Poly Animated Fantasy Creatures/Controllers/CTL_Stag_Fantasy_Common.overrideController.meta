@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4f6c46b3a174ffd419d62ac8af1c3bcd
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Stag_Fantasy_Common.overrideController
+  uploadId: 1030560

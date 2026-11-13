@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a1cbe76922e2edf4a8815f22d0f46cf8
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 22100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 292803
+  packageName: Low Poly Animated Fantasy Creatures
+  packageVersion: 2.1
+  assetPath: Assets/polyperfect/Low Poly Animated Fantasy Creatures/Controllers/CTL_Centaur_Mage_Female.overrideController
+  uploadId: 1030560
