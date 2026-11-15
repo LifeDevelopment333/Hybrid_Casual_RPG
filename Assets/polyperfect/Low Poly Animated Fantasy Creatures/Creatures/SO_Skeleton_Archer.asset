@@ -15,5 +15,5 @@ MonoBehaviour:
   DisplayName: Skeleton Archer
   modelPrefab: {fileID: 2991037841977500332, guid: 7e37145096355874da2821407fe939e1, type: 3}
   previewImage: {fileID: 21300000, guid: b73abd42b0b6d2e44bbcd04eb7569477, type: 3}
-  overrideAnimator: {fileID: 22100000, guid: 2a52e69a965fa5c4184eabb90d20a45d, type: 2}
+  overrideAnimator: {fileID: 22100000, guid: b09dfbf6a3515494ca1e1440ee150ae8, type: 2}
   scale: 1

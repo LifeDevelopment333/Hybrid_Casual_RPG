@@ -71,9 +71,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a248bc8da685841b04549cdef6a3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Skeleton
+  hp: 100
   moveSpeed: 2
   turnSpeed: 360
   attackRange: 1
+  attackDamage: 10
+  attackCooldown: 1
+  hitFraction: 0.8
 --- !u!1001 &5912041283902437010
 PrefabInstance:
   m_ObjectHideFlags: 0

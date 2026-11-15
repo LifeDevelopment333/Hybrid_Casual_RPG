@@ -15,5 +15,5 @@ MonoBehaviour:
   DisplayName: Skeleton Mage
   modelPrefab: {fileID: 4240824761258804541, guid: 6a0d0c32ef4b81d438b2f7806b418863, type: 3}
   previewImage: {fileID: 21300000, guid: 186c6385e9ce7f146b7c798d1b15e6da, type: 3}
-  overrideAnimator: {fileID: 22100000, guid: 88ecc30a83852e04da04a2ac88c005d4, type: 2}
+  overrideAnimator: {fileID: 22100000, guid: c8fa1a4411e86fd4bbc318e6c183203c, type: 2}
   scale: 1

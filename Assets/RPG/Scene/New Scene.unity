@@ -358,7 +358,8 @@ MonoBehaviour:
   player: {fileID: 1017044020}
   minSapwnDistance: 4
   maxSpawnDistance: 8
-  spawnInterval: 2
+  maxAlive: 1
+  spawnInterval: 0.2
 --- !u!4 &490354508
 Transform:
   m_ObjectHideFlags: 0
@@ -1264,6 +1265,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2191946192323681955, guid: eb57595aaead6c245a2308020d7a793b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1017044025}
+    - targetCorrespondingSourceObject: {fileID: 2191946192323681955, guid: eb57595aaead6c245a2308020d7a793b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1017044027}
   m_SourcePrefab: {fileID: 100100000, guid: eb57595aaead6c245a2308020d7a793b, type: 3}
 --- !u!1 &1017044018 stripped
 GameObject:
@@ -1343,6 +1347,19 @@ MonoBehaviour:
   attackDamage: 50
   turnSpeed: 720
   animator: {fileID: 1017044019}
+--- !u!114 &1017044027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017044018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21354031e7d79004b97b6abacc4c0f2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  hp: 100
 --- !u!1 &1056749857
 GameObject:
   m_ObjectHideFlags: 0

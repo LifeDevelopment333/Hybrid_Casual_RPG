@@ -1013,7 +1013,7 @@ GameObject:
   - component: {fileID: 3661806494073249323}
   - component: {fileID: 3844913992359954236}
   m_Layer: 0
-  m_Name: Skeleton_Basic
+  m_Name: skeleton_basic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1046,7 +1046,7 @@ Animator:
   m_GameObject: {fileID: 4150780873371026577}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: bd5753fd127338e4aa33eabf4beb3604, type: 2}
+  m_Controller: {fileID: 22100000, guid: 8eb636351c0315044a8caad171e8aebd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

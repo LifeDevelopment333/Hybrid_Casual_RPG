@@ -15,5 +15,5 @@ MonoBehaviour:
   DisplayName: Skeleton Grunt
   modelPrefab: {fileID: 7653707604898643303, guid: d985b07c9ec4b1b4bb0d9771fe15b425, type: 3}
   previewImage: {fileID: 21300000, guid: 906c869d5dfaa684cac3868f85b9478a, type: 3}
-  overrideAnimator: {fileID: 22100000, guid: e1df5c20e001cd4489b0cae20f291f01, type: 2}
+  overrideAnimator: {fileID: 22100000, guid: 1b5eacae10521464597461b0f88e23e6, type: 2}
   scale: 1

@@ -15,5 +15,5 @@ MonoBehaviour:
   DisplayName: Skeleton Soldier
   modelPrefab: {fileID: 3663621085713489773, guid: f3fc85e7a2b6aae468ef787524f76573, type: 3}
   previewImage: {fileID: 21300000, guid: 97b29e492d67c67419611a0b388ed941, type: 3}
-  overrideAnimator: {fileID: 22100000, guid: 8aa795124ab1fff4e9d9fdfbe10830d5, type: 2}
+  overrideAnimator: {fileID: 22100000, guid: 8d83c01f3c4e8104cbf5a3ee850de9cf, type: 2}
   scale: 1

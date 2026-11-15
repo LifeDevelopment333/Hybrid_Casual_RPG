@@ -143,7 +143,7 @@ public class PlayerAuto : MonoBehaviour
         isAttacking = false;
         nextAttackTime = Time.time + attackCooldown;
 
-        animator.CrossFadeInFixedTime("Base Layer.Locomotion", 0.08f);
+        animator.CrossFadeInFixedTime("Base Layer.Locomotion", 0.25f);
     }
 
     private void Cancle()

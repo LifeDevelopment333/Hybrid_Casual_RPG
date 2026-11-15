@@ -1,3 +1,5 @@
+using NUnit.Framework;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MonsterSpawn : MonoBehaviour
@@ -10,10 +12,13 @@ public class MonsterSpawn : MonoBehaviour
     // 생성될 최소/최대 거리
     [SerializeField] private float minSapwnDistance = 4f;
     [SerializeField] private float maxSpawnDistance = 8f;
+    [SerializeField] private int maxAlive = 20;
 
     // 스폰 주기
     [SerializeField] private float spawnInterval = 2f;
     private float spawnTimer;
+
+    private readonly List<Monster> pool = new List<Monster>();
 
     private Vector3 GetSpawnPosition()
     {
@@ -32,12 +37,24 @@ public class MonsterSpawn : MonoBehaviour
     private void SpawnMonster()
     {
         if (monster == null || player == null) return;
+        if (MonsterManager.Instance.Monsters.Count >= maxAlive) return;
 
         Vector3 spawnPosition = GetSpawnPosition();
+        Monster instance = pool.Find(m => !m.gameObject.activeSelf);
 
-        Monster spawnMonster = Instantiate(monster, spawnPosition, Quaternion.identity);
-        MonsterManager.Instance.Register(spawnMonster);
-        spawnMonster.Initialize(player);
+        if(instance == null)
+        {
+            instance = Instantiate(monster, spawnPosition, Quaternion.identity);
+            pool.Add(instance);
+        }
+        else
+        {
+            instance.transform.SetPositionAndRotation(spawnPosition, Quaternion.identity);
+            instance.gameObject.SetActive(true);
+        }
+
+        instance.Initialize(player);
+        MonsterManager.Instance.Register(instance);
     }
 
     private void Update()
