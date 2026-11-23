@@ -1,0 +1,134 @@
+[
+  {
+    "name": "camp-gateway",
+    "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\camp-gateway\\tripo-out\\camp-gateway-v1-d585ad48\\model.glb",
+    "source_dimensions": [
+      0.18294823169708252,
+      1.0,
+      0.72538822889328
+    ],
+    "review_scale_factor": 5.0,
+    "provisional_dimensions_metres": [
+      0.9147411584854126,
+      5.0,
+      3.626941204071045
+    ],
+    "triangles": 23320,
+    "vertices": 13794,
+    "mesh_objects": 1,
+    "materials": [
+      "tripo_material_d585ad48-5cfb-4c55-b415-2c4cc2078c27"
+    ],
+    "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+  },
+  {
+    "name": "dirt-path-ground",
+    "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\dirt-path-ground\\tripo-out\\dirt-path-ground-v1-581242ab\\model.glb",
+    "source_dimensions": [
+      0.9073551297187805,
+      1.0,
+      0.05467499420046806
+    ],
+    "review_scale_factor": 8.0,
+    "provisional_dimensions_metres": [
+      7.258841037750244,
+      8.0,
+      0.4373999536037445
+    ],
+    "triangles": 22134,
+    "vertices": 13527,
+    "mesh_objects": 1,
+    "materials": [
+      "tripo_material_581242ab-1f69-4b36-9b5e-0ce167406ba5"
+    ],
+    "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+  },
+  {
+    "name": "granite-rock",
+    "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\granite-rock\\tripo-out\\granite-rock-v1-129cb5ff\\model.glb",
+    "source_dimensions": [
+      0.9138562083244324,
+      0.9786131381988525,
+      1.0
+    ],
+    "review_scale_factor": 3.06556276724583,
+    "provisional_dimensions_metres": [
+      2.801483631134033,
+      3.0,
+      3.0655627250671387
+    ],
+    "triangles": 23540,
+    "vertices": 13244,
+    "mesh_objects": 1,
+    "materials": [
+      "tripo_material_129cb5ff-a38f-4294-a1ce-cb873966e937"
+    ],
+    "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+  },
+  {
+    "name": "grass-ground",
+    "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\grass-ground\\tripo-out\\grass-ground-v1-7c27f5a0\\model.glb",
+    "source_dimensions": [
+      0.9978649616241455,
+      1.0,
+      0.05194535106420517
+    ],
+    "review_scale_factor": 8.0,
+    "provisional_dimensions_metres": [
+      7.982919692993164,
+      8.0,
+      0.41556280851364136
+    ],
+    "triangles": 22940,
+    "vertices": 12953,
+    "mesh_objects": 1,
+    "materials": [
+      "tripo_material_7c27f5a0-3ca0-44db-af4d-9f014652c4fb"
+    ],
+    "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+  },
+  {
+    "name": "oak-tree",
+    "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\oak-tree\\tripo-out\\oak-tree-v1-29a6781f\\model.glb",
+    "source_dimensions": [
+      0.6764017343521118,
+      1.0,
+      0.887386679649353
+    ],
+    "review_scale_factor": 5.0,
+    "provisional_dimensions_metres": [
+      3.3820085525512695,
+      5.0,
+      4.436933517456055
+    ],
+    "triangles": 22888,
+    "vertices": 22981,
+    "mesh_objects": 1,
+    "materials": [
+      "tripo_material_29a6781f-7481-48d0-babe-727448d5900a"
+    ],
+    "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+  },
+  {
+    "name": "timber-fence",
+    "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\timber-fence\\tripo-out\\timber-fence-v1-87df74cc\\model.glb",
+    "source_dimensions": [
+      0.14759638905525208,
+      1.0,
+      0.3926164507865906
+    ],
+    "review_scale_factor": 4.0,
+    "provisional_dimensions_metres": [
+      0.5903855562210083,
+      4.0,
+      1.5704658031463623
+    ],
+    "triangles": 21876,
+    "vertices": 13216,
+    "mesh_objects": 1,
+    "materials": [
+      "tripo_material_87df74cc-8da1-4377-9d15-f1b457769d71"
+    ],
+    "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+  }
+]

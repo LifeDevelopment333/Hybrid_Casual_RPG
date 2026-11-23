@@ -39,7 +39,7 @@ public class MonsterManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (Instance == this)
+        if (instance == this)
             instance = null;
     }
 

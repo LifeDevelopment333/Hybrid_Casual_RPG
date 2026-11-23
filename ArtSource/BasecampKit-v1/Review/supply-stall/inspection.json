@@ -1,0 +1,22 @@
+{
+  "name": "supply-stall",
+  "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\BasecampKit-v1\\Models\\supply-stall\\tripo-out\\supply-stall-v1-56b001f5\\model.glb",
+  "source_dimensions": [
+    0.7964774370193481,
+    0.9863014221191406,
+    1.0
+  ],
+  "review_scale_factor": 2.534722164517592,
+  "provisional_dimensions_metres": [
+    2.0188488960266113,
+    2.5,
+    2.534722089767456
+  ],
+  "triangles": 12152,
+  "vertices": 15504,
+  "mesh_objects": 1,
+  "materials": [
+    "tripo_material_56b001f5-55fc-4a05-9b77-ce103ec1636a"
+  ],
+  "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+}

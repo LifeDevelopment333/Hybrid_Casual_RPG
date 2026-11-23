@@ -1,0 +1,1018 @@
+{
+  "style": "Blackiron A / 흑철과 잿불",
+  "count": 46,
+  "sprites": [
+    {
+      "name": "panel-main",
+      "category": "panels",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/panels/panel-main.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/panels.png",
+      "width": 560,
+      "height": 347,
+      "sourceRectBottomLeft": [
+        44,
+        827,
+        560,
+        347
+      ],
+      "borderLeftBottomRightTop": [
+        48.0,
+        48.0,
+        48.0,
+        48.0
+      ],
+      "visiblePixels": 193354,
+      "transparentPixels": 966
+    },
+    {
+      "name": "panel-section",
+      "category": "panels",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/panels/panel-section.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/panels.png",
+      "width": 560,
+      "height": 224,
+      "sourceRectBottomLeft": [
+        649,
+        882,
+        560,
+        224
+      ],
+      "borderLeftBottomRightTop": [
+        40.0,
+        32.0,
+        40.0,
+        32.0
+      ],
+      "visiblePixels": 124467,
+      "transparentPixels": 973
+    },
+    {
+      "name": "panel-stat-row",
+      "category": "panels",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/panels/panel-stat-row.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/panels.png",
+      "width": 553,
+      "height": 124,
+      "sourceRectBottomLeft": [
+        46,
+        538,
+        553,
+        124
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        24.0,
+        28.0,
+        24.0
+      ],
+      "visiblePixels": 66068,
+      "transparentPixels": 2504
+    },
+    {
+      "name": "panel-item-detail",
+      "category": "panels",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/panels/panel-item-detail.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/panels.png",
+      "width": 561,
+      "height": 258,
+      "sourceRectBottomLeft": [
+        649,
+        475,
+        561,
+        258
+      ],
+      "borderLeftBottomRightTop": [
+        40.0,
+        32.0,
+        40.0,
+        32.0
+      ],
+      "visiblePixels": 143080,
+      "transparentPixels": 1658
+    },
+    {
+      "name": "frame-portrait",
+      "category": "panels",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/panels/frame-portrait.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/panels.png",
+      "width": 304,
+      "height": 301,
+      "sourceRectBottomLeft": [
+        171,
+        77,
+        304,
+        301
+      ],
+      "borderLeftBottomRightTop": [
+        40.0,
+        40.0,
+        40.0,
+        40.0
+      ],
+      "visiblePixels": 24099,
+      "transparentPixels": 67405
+    },
+    {
+      "name": "plaque-title",
+      "category": "panels",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/panels/plaque-title.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/panels.png",
+      "width": 555,
+      "height": 129,
+      "sourceRectBottomLeft": [
+        652,
+        164,
+        555,
+        129
+      ],
+      "borderLeftBottomRightTop": [
+        84.0,
+        24.0,
+        84.0,
+        24.0
+      ],
+      "visiblePixels": 63895,
+      "transparentPixels": 7700
+    },
+    {
+      "name": "button-normal",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/button-normal.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 276,
+      "height": 113,
+      "sourceRectBottomLeft": [
+        19,
+        1026,
+        276,
+        113
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        24.0,
+        28.0,
+        24.0
+      ],
+      "visiblePixels": 29699,
+      "transparentPixels": 1489
+    },
+    {
+      "name": "button-highlighted",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/button-highlighted.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 276,
+      "height": 116,
+      "sourceRectBottomLeft": [
+        333,
+        1026,
+        276,
+        116
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        24.0,
+        28.0,
+        24.0
+      ],
+      "visiblePixels": 30737,
+      "transparentPixels": 1279
+    },
+    {
+      "name": "button-pressed",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/button-pressed.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 276,
+      "height": 115,
+      "sourceRectBottomLeft": [
+        646,
+        1026,
+        276,
+        115
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        24.0,
+        28.0,
+        24.0
+      ],
+      "visiblePixels": 30181,
+      "transparentPixels": 1559
+    },
+    {
+      "name": "button-disabled",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/button-disabled.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 276,
+      "height": 115,
+      "sourceRectBottomLeft": [
+        960,
+        1026,
+        276,
+        115
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        24.0,
+        28.0,
+        24.0
+      ],
+      "visiblePixels": 30152,
+      "transparentPixels": 1588
+    },
+    {
+      "name": "slot-common",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/slot-common.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 223,
+      "height": 223,
+      "sourceRectBottomLeft": [
+        45,
+        656,
+        223,
+        223
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        28.0,
+        28.0,
+        28.0
+      ],
+      "visiblePixels": 48702,
+      "transparentPixels": 1027
+    },
+    {
+      "name": "slot-rare",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/slot-rare.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 222,
+      "height": 223,
+      "sourceRectBottomLeft": [
+        360,
+        656,
+        222,
+        223
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        28.0,
+        28.0,
+        28.0
+      ],
+      "visiblePixels": 48300,
+      "transparentPixels": 1206
+    },
+    {
+      "name": "slot-epic",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/slot-epic.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 223,
+      "height": 223,
+      "sourceRectBottomLeft": [
+        673,
+        656,
+        223,
+        223
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        28.0,
+        28.0,
+        28.0
+      ],
+      "visiblePixels": 48919,
+      "transparentPixels": 810
+    },
+    {
+      "name": "slot-selected",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/slot-selected.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 222,
+      "height": 223,
+      "sourceRectBottomLeft": [
+        987,
+        656,
+        222,
+        223
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        28.0,
+        28.0,
+        28.0
+      ],
+      "visiblePixels": 48457,
+      "transparentPixels": 1049
+    },
+    {
+      "name": "bar-track",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/bar-track.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 275,
+      "height": 73,
+      "sourceRectBottomLeft": [
+        20,
+        435,
+        275,
+        73
+      ],
+      "borderLeftBottomRightTop": [
+        32.0,
+        16.0,
+        32.0,
+        16.0
+      ],
+      "visiblePixels": 19496,
+      "transparentPixels": 579
+    },
+    {
+      "name": "bar-hp-fill",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/bar-hp-fill.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 267,
+      "height": 52,
+      "sourceRectBottomLeft": [
+        337,
+        447,
+        267,
+        52
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 12457,
+      "transparentPixels": 1427
+    },
+    {
+      "name": "bar-exp-fill",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/bar-exp-fill.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 267,
+      "height": 53,
+      "sourceRectBottomLeft": [
+        650,
+        447,
+        267,
+        53
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 12923,
+      "transparentPixels": 1228
+    },
+    {
+      "name": "bar-enemy-fill",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/bar-enemy-fill.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 267,
+      "height": 45,
+      "sourceRectBottomLeft": [
+        964,
+        451,
+        267,
+        45
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 11855,
+      "transparentPixels": 160
+    },
+    {
+      "name": "joystick-base",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/joystick-base.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 231,
+      "height": 235,
+      "sourceRectBottomLeft": [
+        41,
+        40,
+        231,
+        235
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 43066,
+      "transparentPixels": 11219
+    },
+    {
+      "name": "joystick-knob",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/joystick-knob.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 157,
+      "height": 160,
+      "sourceRectBottomLeft": [
+        392,
+        75,
+        157,
+        160
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 19626,
+      "transparentPixels": 5494
+    },
+    {
+      "name": "tab-normal",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/tab-normal.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 277,
+      "height": 143,
+      "sourceRectBottomLeft": [
+        645,
+        86,
+        277,
+        143
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        28.0,
+        28.0,
+        28.0
+      ],
+      "visiblePixels": 37896,
+      "transparentPixels": 1715
+    },
+    {
+      "name": "tab-selected",
+      "category": "controls",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/controls/tab-selected.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/controls.png",
+      "width": 278,
+      "height": 143,
+      "sourceRectBottomLeft": [
+        959,
+        86,
+        278,
+        143
+      ],
+      "borderLeftBottomRightTop": [
+        28.0,
+        28.0,
+        28.0,
+        28.0
+      ],
+      "visiblePixels": 37995,
+      "transparentPixels": 1759
+    },
+    {
+      "name": "icon-battle",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-battle.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 209,
+      "height": 203,
+      "sourceRectBottomLeft": [
+        73,
+        972,
+        209,
+        203
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 24102,
+      "transparentPixels": 18325
+    },
+    {
+      "name": "icon-equipment",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-equipment.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 164,
+      "height": 217,
+      "sourceRectBottomLeft": [
+        391,
+        970,
+        164,
+        217
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 26369,
+      "transparentPixels": 9219
+    },
+    {
+      "name": "icon-bag",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-bag.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 204,
+      "height": 208,
+      "sourceRectBottomLeft": [
+        676,
+        971,
+        204,
+        208
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 31910,
+      "transparentPixels": 10522
+    },
+    {
+      "name": "icon-stats",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-stats.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 179,
+      "height": 172,
+      "sourceRectBottomLeft": [
+        991,
+        989,
+        179,
+        172
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 22886,
+      "transparentPixels": 7902
+    },
+    {
+      "name": "icon-health",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-health.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 188,
+      "height": 172,
+      "sourceRectBottomLeft": [
+        83,
+        682,
+        188,
+        172
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 23185,
+      "transparentPixels": 9151
+    },
+    {
+      "name": "icon-attack",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-attack.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 220,
+      "height": 231,
+      "sourceRectBottomLeft": [
+        362,
+        655,
+        220,
+        231
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 16641,
+      "transparentPixels": 34179
+    },
+    {
+      "name": "icon-defense",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-defense.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 183,
+      "height": 229,
+      "sourceRectBottomLeft": [
+        690,
+        657,
+        183,
+        229
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 29341,
+      "transparentPixels": 12566
+    },
+    {
+      "name": "icon-movement",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-movement.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 216,
+      "height": 190,
+      "sourceRectBottomLeft": [
+        977,
+        676,
+        216,
+        190
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 24585,
+      "transparentPixels": 16455
+    },
+    {
+      "name": "icon-attack-speed",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-attack-speed.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 211,
+      "height": 186,
+      "sourceRectBottomLeft": [
+        70,
+        369,
+        211,
+        186
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 16796,
+      "transparentPixels": 22450
+    },
+    {
+      "name": "icon-critical",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-critical.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 194,
+      "height": 224,
+      "sourceRectBottomLeft": [
+        372,
+        360,
+        194,
+        224
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 19997,
+      "transparentPixels": 23459
+    },
+    {
+      "name": "icon-plus",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-plus.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 180,
+      "height": 181,
+      "sourceRectBottomLeft": [
+        691,
+        381,
+        180,
+        181
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 16906,
+      "transparentPixels": 15674
+    },
+    {
+      "name": "icon-reset",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-reset.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 190,
+      "height": 192,
+      "sourceRectBottomLeft": [
+        992,
+        371,
+        190,
+        192
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 20497,
+      "transparentPixels": 15983
+    },
+    {
+      "name": "icon-close",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-close.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 166,
+      "height": 164,
+      "sourceRectBottomLeft": [
+        94,
+        87,
+        166,
+        164
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 16668,
+      "transparentPixels": 10556
+    },
+    {
+      "name": "icon-back",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-back.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 117,
+      "height": 170,
+      "sourceRectBottomLeft": [
+        403,
+        82,
+        117,
+        170
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 8677,
+      "transparentPixels": 11213
+    },
+    {
+      "name": "icon-gold",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-gold.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 198,
+      "height": 147,
+      "sourceRectBottomLeft": [
+        674,
+        95,
+        198,
+        147
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 20488,
+      "transparentPixels": 8618
+    },
+    {
+      "name": "icon-auto-combat",
+      "category": "icons",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/icons/icon-auto-combat.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/icons.png",
+      "width": 234,
+      "height": 209,
+      "sourceRectBottomLeft": [
+        962,
+        68,
+        234,
+        209
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 26705,
+      "transparentPixels": 22201
+    },
+    {
+      "name": "item-greatsword",
+      "category": "equipment",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/equipment/item-greatsword.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/equipment.png",
+      "width": 309,
+      "height": 384,
+      "sourceRectBottomLeft": [
+        88,
+        465,
+        309,
+        384
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 37496,
+      "transparentPixels": 81160
+    },
+    {
+      "name": "item-leather-hood",
+      "category": "equipment",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/equipment/item-leather-hood.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/equipment.png",
+      "width": 319,
+      "height": 342,
+      "sourceRectBottomLeft": [
+        519,
+        481,
+        319,
+        342
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 68711,
+      "transparentPixels": 40387
+    },
+    {
+      "name": "item-leather-armor",
+      "category": "equipment",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/equipment/item-leather-armor.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/equipment.png",
+      "width": 326,
+      "height": 352,
+      "sourceRectBottomLeft": [
+        946,
+        477,
+        326,
+        352
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 89078,
+      "transparentPixels": 25674
+    },
+    {
+      "name": "item-leather-gloves",
+      "category": "equipment",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/equipment/item-leather-gloves.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/equipment.png",
+      "width": 332,
+      "height": 346,
+      "sourceRectBottomLeft": [
+        1384,
+        484,
+        332,
+        346
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 69541,
+      "transparentPixels": 45331
+    },
+    {
+      "name": "item-leather-legs",
+      "category": "equipment",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/equipment/item-leather-legs.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/equipment.png",
+      "width": 268,
+      "height": 342,
+      "sourceRectBottomLeft": [
+        103,
+        55,
+        268,
+        342
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 74283,
+      "transparentPixels": 17373
+    },
+    {
+      "name": "item-ring",
+      "category": "equipment",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/equipment/item-ring.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/equipment.png",
+      "width": 293,
+      "height": 275,
+      "sourceRectBottomLeft": [
+        526,
+        82,
+        293,
+        275
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 51804,
+      "transparentPixels": 28771
+    },
+    {
+      "name": "item-necklace",
+      "category": "equipment",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/equipment/item-necklace.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/equipment.png",
+      "width": 257,
+      "height": 335,
+      "sourceRectBottomLeft": [
+        987,
+        60,
+        257,
+        335
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 23514,
+      "transparentPixels": 62581
+    },
+    {
+      "name": "item-earring",
+      "category": "equipment",
+      "assetPath": "Assets/RPG/ART/UI/Blackiron-v1/equipment/item-earring.png",
+      "sourceSheet": "ArtSource/UI-Blackiron-v1/Sheets/equipment.png",
+      "width": 128,
+      "height": 329,
+      "sourceRectBottomLeft": [
+        1484,
+        60,
+        128,
+        329
+      ],
+      "borderLeftBottomRightTop": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "visiblePixels": 21919,
+      "transparentPixels": 20193
+    }
+  ]
+}

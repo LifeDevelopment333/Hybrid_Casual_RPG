@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-23",
+  "type": "세로형 UI 디자인 시안; 각 보드는 세로 화면 3장을 나란히 배치한 비교용 이미지",
+  "implementation": "정적 콘셉트. 실제 Unity UI나 맵을 변경하지 않음. 수치·아이템은 예시. 9:16 목표 배치이며 생성 이미지의 정확한 픽셀 비율은 구현 사양이 아님.",
+  "references": [
+    {
+      "game": "Archero 2",
+      "url": "https://www.habby.com/game",
+      "visual": "https://forum.gamer.com.tw/C.php?bsn=36683&page=3&snA=4031",
+      "applied": "장비 등급 카드와 선명한 캐주얼 색감"
+    },
+    {
+      "game": "Nonstop Knight 2",
+      "url": "https://play.google.com/store/apps/details?id=com.flaregames.nonstop.action.rpg",
+      "visual": "https://multiplayer.it/recensioni/nonstop-knight-2-la-recensione.html",
+      "applied": "세로형 자동 전투 가독성과 단순화된 기사 실루엣"
+    },
+    {
+      "game": "mo.co",
+      "url": "https://supercell.com/en/news/moco-launch/",
+      "visual": "https://gnn.gamer.com.tw/detail.php?sn=258426",
+      "applied": "현대적 그래픽 대비와 보라·민트 포인트를 독자적인 중세 판타지로 재해석"
+    }
+  ],
+  "generator": "built-in image_gen",
+  "basePrompt": "Use case: ui-mockup. Create a high quality original Korean stylized mobile RPG UI concept presentation sheet. THE GAME IS PORTRAIT, NEVER LANDSCAPE. The presentation sheet contains exactly THREE tall vertical 9:16 game screen artboards, arranged side-by-side with narrow gutters, each fully visible, equal size, straight-on no perspective, no phone hardware frames. Each game viewport has width:height 9:16, e.g. 540 x 960. Sheet canvas approximately 1800 x 1200 including a small title strip. Make typography large and crisp enough to inspect. Three screens labeled above their viewports \"전투\", \"장비 · 가방\", \"능력치\". Do not squeeze a wide desktop interface into a phone. This is a complete new art direction exploration; DO NOT reproduce the previous green grassy camp, beige diagonal road, parchment UI or existing map. Create a new coherent stylized environment specific to the direction below. Distinctive original human chibi swordsman with oversized sword, original goblin and skeleton monsters. All game UI graphics are polished 2D with readable icons on a stylized quarter-view 3D world.\nScreen 1 PORTRAIT COMBAT: compact top safe area, left portrait \"Lv.12\", red HP bar \"840 / 1,200\", thin EXP bar \"68%\"; top location appropriate to environment. Camera framed for vertical movement, hero at 53% height, upcoming enemies toward upper half, clear field occupying at least 65% viewport. Small enemy HP bars, one damage number, modest coin/item drop. Mid-lower right two tiny pickup toasts \"골드 +24\", \"낡은 검 +1\". Lower-left translucent joystick above navigation, lower-right passive chip \"자동 전투 중\" (no toggle). Fixed thumb-friendly bottom nav with FOUR labeled icons \"전투\", \"장비\", \"가방\", \"능력치\", active 전투. No unrelated shortcut clutter.\nScreen 2 PORTRAIT EQUIPMENT/BAG: title \"장비\", upper half human hero full body preview surrounded by EIGHT compact equipment slots in two columns of four: weapon, head, armor, gloves, legs, ring, necklace, earring. All fit inside portrait width. Lower half title \"가방\", 4 columns x 2 rows of equipment/item icons. A small selected sword detail card showing \"희귀 철제 검\", \"공격력 +24\", large thumb reachable \"장착\" button. Gray, blue, violet indicate rarity. Same bottom four-tab nav, active 장비. No bag capacity limit number.\nScreen 3 PORTRAIT STATS: title \"능력치\", compact portrait and level card, strong clear \"남은 포인트 3\". Full-width stacked touch-friendly stat rows with plus buttons: \"최대 HP 1,200\", \"공격력 86\", \"방어력 32\", \"이동속도 4.0\", \"공격속도 1.0\", \"치명타 확률 5%\". Small \"초기화\" button below. Every plus button has same design and adequate space. Same bottom navigation, active 능력치.\nText in Korean, exact provided labels, no tiny paragraphs or gibberish. Sample values only. NO shops, premium gems, gacha, quests, skill buttons, cooldowns, enhancement, battlepass, login rewards, energy, multiplayer, score or stage-clear progress. Focus only HP, level/XP, auto approach/attack, loot collection, equipment, inventory and allocating stat points. Not a game screenshot recreation. Use reference games only as visual design principles, no copied characters or logos. Sheet top heading concise direction name below. Overall 3 real portrait phone game screens, professional practical mobile UI, no landscape game viewport.",
+  "variants": [
+    {
+      "id": "A",
+      "file": "A-prism-ruins-portrait.png",
+      "name": "A / 프리즘 유적",
+      "direction": "Visual reference principles: Archero 2 colorful readable equipment cards and strong simplified chibi silhouettes, reinterpret originally. Heading \"A / 프리즘 유적\". NEW MAP: sunlit floating sandstone ruins, peach stone terraces, turquoise shallow water, sparse coral-orange flowering shrubs, sculptural geometric arches, no generic green camp. Cyan shadows and warm apricot light; big readable navigation shapes. UI: saturated azure and teal header panels, warm ivory cards, bold rounded Korean typography, orange action buttons, softly beveled substantial rounded icon frames; playful collectible equipment with clear rarity color. Character small armored human knight with oversized steel sword, blue scarf. Friendly polished stylized 3D, painterly broad surfaces, no heavy ink outlines. Bright high contrast casual action RPG."
+    },
+    {
+      "id": "B",
+      "file": "B-lantern-depths-portrait.png",
+      "name": "B / 랜턴 던전",
+      "direction": "Visual reference principles: Nonstop Knight 2 vertical auto-combat readability, chunky armor silhouettes, clean stacked equipment structure; reinterpret originally. Heading \"B / 랜턴 던전\". NEW MAP: blue slate underground citadel, broad asymmetric stone slabs, warm amber lanterns and braziers around edges, stylized violet mushrooms and small crystal seams, central combat floor spacious and gently lit. Not horror or realism. UI: deep midnight-blue rounded panels, desaturated slate cards, ivory text, orange-yellow primary actions, teal XP accent, spare bronze metal trim, substantial simple readable icons. Human stout original armored swordsman with oversized broad sword and copper helmet. Big visual silhouettes, sparse soft gradients, premium clean stylized dungeon RPG. Strong foreground/background separation. No ornate parchment."
+    },
+    {
+      "id": "C",
+      "file": "C-pop-rift-portrait.png",
+      "name": "C / 팝 리프트",
+      "direction": "Visual reference principles: mo.co graphic modern color blocking, playful silhouettes, bold typography and generous visual hierarchy; reinterpret as original medieval melee RPG, not sci-fi weapons. Heading \"C / 팝 리프트\". NEW MAP: lavender stone canyon under twilight, turquoise bioluminescent plants, chunky pink crystal columns and floating fractured boulders, dark plum shadow shapes with magenta accents. Spacious clean arena, no grassy camp. UI: dark aubergine flat panels, cream bold typography, electric mint main actions, lavender selection, coral health, crisp thick icon outlines and graphic offset shadows, minimal bevels. Original human adventurer in simplified dark medieval armor with lilac sash and oversized sword. Contemporary stylish cel-shaded fantasy, expressive but readable. No guns, no gadgets, no modern city props. Clearly distinct from classic parchment and gold fantasy UI."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "date": "2026-11-23",
+  "purpose": "리니지라이크의 절제된 금속 프레임과 반실사 장비 표현을 적용한 세로형 UI 시안 3종. 각 보드는 전투·장비/가방·능력치의 세로 화면 3장을 나란히 배치.",
+  "method": "built-in image_gen; 별도 CLI 없음",
+  "scope": "정적 이미지 시안 제작. 실제 Unity 씬, UI, 캐릭터, 스크립트 변경 없음.",
+  "caveats": [
+    "캐릭터는 기존 모델을 직접 렌더한 결과가 아니라 갈색 가죽·금속·대검을 바탕으로 생성한 콘셉트 해석이다.",
+    "생성된 배경과 캐릭터는 현재 게임보다 사실적인 편이다. 적용 시 현재 모델을 유지하고 배경의 세부 묘사 수준을 낮추는 검토가 필요하다.",
+    "9:16 목표 화면 배치. 정확한 픽셀 비율과 터치 영역은 실제 구현 단계에서 확인해야 한다.",
+    "표시 수치와 아이템은 예시 데이터다. 폰트, 희귀도 및 슬롯 아이콘은 제작 시 일관성 정리가 필요하다."
+  ],
+  "references": [
+    {
+      "title": "리니지M 메뉴 및 UI 소개",
+      "url": "https://rc-wstatic.plaync.co.kr/lineagem/guidebook/begin_menu_ui_index.html"
+    },
+    {
+      "title": "리니지W 기본 화면 & 전투 특성 공식 가이드",
+      "url": "https://www.youtube.com/watch?v=LMd7pVnEdNY"
+    }
+  ],
+  "basePrompt": "Use case: ui-mockup. Create an ORIGINAL high-fidelity Korean semi-realistic fantasy mobile RPG UI design presentation. Key change from generic casual RPG: REALISTIC-LEANING adult human adventurer proportions, mature restrained MMORPG interface, thin aged metal frames, finely painted equipment icons, no chibi or cartoon mobile game aesthetic. A Lineage-like art direction vocabulary interpreted for a PORTRAIT single player hybrid casual RPG, not a copied Lineage screen. Do not put any game franchise logo or trademark in the image.\nPRESENTATION: one wide clean comparison board containing exactly THREE EQUAL PORTRAIT 9:16 game screens side by side, no hardware phone frames, no perspective. Each viewport is tall, e.g. 540 wide x 960 tall, all three completely visible. Narrow gutters. Outside viewport only small direction heading and labels \"전투\", \"장비 · 가방\", \"능력치\". The board is landscape only to display three portrait game screens; each actual game screen MUST be vertical 9:16. Readable Korean typography at mobile scale. No tiny ornamental script. This must look like usable in-game UI, not splash concept art.\nCHARACTER CONTINUITY: All three screens depict the SAME adult male brown-haired human adventurer, about 6.5 to 7 heads tall, grounded anatomy, brown layered leather tunic and shoulder armor, warm steel fittings, worn dark brown leather boots and gloves, huge broad steel greatsword with aged bronze crossguard and brown leather grip. No oversized head, no giant eyes, no smiling child, no bobblehead, no anime face, no royal full-plate armor makeover, no guns. His appearance is a concept interpretation of an existing grounded leather-armored greatsword adventurer, not a new cute hero. Material detail from broad realistic leather and metal surfaces, not noisy scratches. Original goblins and skeletons as enemies. Stylized yet grounded 3D environment, quarter-view top-down camera, broad readable forms, restrained texture noise. NOT photoreal cinema and not flat cartoon.\nSCREEN 1 PORTRAIT COMBAT: minimal upper-left mature human portrait with \"Lv.12\", muted crimson HP \"840 / 1,200\", gold/slate EXP \"68%\"; upper-right compact location. Hero around middle of viewport seen quarter-view at realistic gameplay scale, visible enemies in upper half, at least 65% gameplay area unobstructed. One subtle gold sword slash, enemy red health bars, modest damage number \"86\". Small lower-right nonintrusive pickup text \"골드 +24\" and \"낡은 검 +1\". Lower-left translucent small circular joystick, lower-right passive text badge \"자동 전투 중\" with NO interactive toggle affordance. Bottom thin horizontal EXP accent above restrained four-icon labeled nav \"전투\", \"장비\", \"가방\", \"능력치\", active 전투. No attack skill hotbar, no potion, no extra top-row menus, no world map.\nSCREEN 2 PORTRAIT EQUIPMENT: title \"장비\". Upper 45% adult adventurer full body with eight carefully painted gear slots in 2 columns x4 around him: sword, head, chest, gloves, legs, ring, necklace, earring. Distinct recognizable icons, metallic narrow border, restrained gray/blue/violet rarity edge. Lower portion \"가방\", a 4-column x2-row grid of eight equipment/material icons, with selected rare sword. Below grid a concise detail block \"희귀 철제 검\", \"공격력 +24\", substantial elegant \"장착\" button. Bottom same four-nav labels, active 장비. No inventory capacity number, no random upgrade marks.\nSCREEN 3 PORTRAIT STATS: title \"능력치\", compact matching adult portrait / \"Lv.12\" identity block. Clear \"남은 포인트 3\". Six spacious full-width stacked rows and same plus button on right: \"최대 HP 1,200\", \"공격력 86\", \"방어력 32\", \"이동속도 4.0\", \"공격속도 1.0\", \"치명타 확률 5%\". Small secondary \"초기화\" button beneath. Bottom same four-nav labels, active 능력치. Keep touch targets readable and large.\nFUNCTION SCOPE: only implemented HP, level/EXP, automatic approach and attack, loot pickup, equipment, inventory, stat point allocation. Do NOT add MP meter, shops, cash gems, energy, quests, enchantments, gacha, login rewards, battlepass, guild, PvP, potions, active skills, cooldowns or minimap. No fabricated feature buttons. Numbers and item names are example design data.\nVISUAL: clean classic fantasy hierarchy, elegant straight-edged or subtly clipped corners, very limited small flourishes, luminous accents only for selection, high contrast text, deep layered translucent panels with fine metal outlines. Mature detailed inventory icons rendered consistently with the actual leather and steel equipment. Absolutely no bulky rounded orange plastic buttons, no mobile cartoon outlined icons, no overdecorated gothic skulls, no parchment journal framing. Make this a polished practical vertical mobile game design suite, all three screens aligned and coherent.",
+  "variants": [
+    {
+      "id": "A",
+      "name": "A / 흑철과 잿불",
+      "file": "A-blackiron-ember-portrait.png",
+      "direction": "Direction A heading \"A / 흑철과 잿불\". Classic mature dark fantasy with near-black iron panels, narrow aged bronze filigree corners, warm ivory text, muted amber-gold primary button, dark wine-red selection and crimson HP. NEW WORLD: abandoned stone fortress at dusk, weathered gray-brown flagstone combat clearing, orange torchlight from side walls, distant broken arch, sparse muted ochre weeds, smoke subtly in far background. Character brown leather and warm steel remain visible against slightly cool floor. Equipment screen backdrop subdued dark workshop stone. Thin bronze rectangular stat rows. Weighty old-school fantasy MMORPG atmosphere but clean mobile presentation. Warm serious classic direction, NOT horror or excessively dark unreadable gameplay."
+    },
+    {
+      "id": "B",
+      "name": "B / 은빛 서약",
+      "file": "B-silver-oath-portrait.png",
+      "direction": "Direction B heading \"B / 은빛 서약\". Modern restrained knight fantasy with dark desaturated navy/slate panels, thin brushed silver edges, bone-white text, pale muted gold for primary action, cool blue selection highlights; no saturated electric cyan. NEW WORLD: moonlit blue-gray ruined cloister and flagstone courtyard, pale stone columns, sparse desaturated blue foliage, restrained warm lantern on one side, softly lit combat floor. Adult leather-armored adventurer brown clothing creates natural focal color. Clean straight-line panels, minimal decoration and subtly chamfered corners. Gear icons finely painted, larger negative space, polished editorial typography. Strong realism compatibility while preserving stylized background readability. Clear accessible panel contrast, not excessively dark. Premium minimal fantasy UI, not sci-fi."
+    },
+    {
+      "id": "C",
+      "name": "C / 변경의 기록",
+      "file": "C-frontier-patina-portrait.png",
+      "direction": "Direction C heading \"C / 변경의 기록\". Bright grounded expedition fantasy using LIGHT WARM STONE/IVORY menu panels, dark walnut text, fine patinated brass edges, moss-green primary button and restrained gold selection; warm charcoal translucent combat HUD. Not parchment scrolls or stitched journals. NEW WORLD: sunlit weathered limestone frontier ruins with broad cobblestone lane, pale dry grass, distant mountain haze, low broken stone walls, desaturated sage shrubs, old timber gateway at edge. NO generic bright green camp field. Adult brown leather adventurer harmonizes with daylight stone and sage palette. Equipment screen uses calm warm-gray backdrop and ivory card surfaces with fine brass separators. Mature, practical light-mode fantasy UI, quiet restrained realistic-looking material icons, no chunky casual toy buttons. Lower overall saturation but ample warmth and readability. Clearly visually different from the two dark themes."
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "granite-rock",
+  "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\granite-rock\\tripo-out\\granite-rock-v1-129cb5ff\\model.glb",
+  "source_dimensions": [
+    0.9138562083244324,
+    0.9786131381988525,
+    1.0
+  ],
+  "review_scale_factor": 3.06556276724583,
+  "provisional_dimensions_metres": [
+    2.801483631134033,
+    3.0,
+    3.0655627250671387
+  ],
+  "triangles": 23540,
+  "vertices": 13244,
+  "mesh_objects": 1,
+  "materials": [
+    "tripo_material_129cb5ff-a38f-4294-a1ce-cb873966e937"
+  ],
+  "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+}

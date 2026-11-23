@@ -1,0 +1,22 @@
+{
+  "name": "camp-gateway",
+  "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\camp-gateway\\tripo-out\\camp-gateway-v1-d585ad48\\model.glb",
+  "source_dimensions": [
+    0.18294823169708252,
+    1.0,
+    0.72538822889328
+  ],
+  "review_scale_factor": 5.0,
+  "provisional_dimensions_metres": [
+    0.9147411584854126,
+    5.0,
+    3.626941204071045
+  ],
+  "triangles": 23320,
+  "vertices": 13794,
+  "mesh_objects": 1,
+  "materials": [
+    "tripo_material_d585ad48-5cfb-4c55-b415-2c4cc2078c27"
+  ],
+  "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+}

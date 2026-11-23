@@ -359,7 +359,7 @@ MonoBehaviour:
   minSapwnDistance: 4
   maxSpawnDistance: 8
   maxAlive: 1
-  spawnInterval: 0.2
+  spawnInterval: 1
 --- !u!4 &490354508
 Transform:
   m_ObjectHideFlags: 0
@@ -1268,6 +1268,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2191946192323681955, guid: eb57595aaead6c245a2308020d7a793b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1017044027}
+    - targetCorrespondingSourceObject: {fileID: 2191946192323681955, guid: eb57595aaead6c245a2308020d7a793b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1017044028}
   m_SourcePrefab: {fileID: 100100000, guid: eb57595aaead6c245a2308020d7a793b, type: 3}
 --- !u!1 &1017044018 stripped
 GameObject:
@@ -1342,9 +1345,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAuto
   detectionRadius: 18
   attackRange: 2
-  hitFraction: 0.45
+  hitFraction: 0.6
   attackCooldown: 0.15
-  attackDamage: 50
+  attackDamage: 100
   turnSpeed: 720
   animator: {fileID: 1017044019}
 --- !u!114 &1017044027
@@ -1360,6 +1363,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   hp: 100
+--- !u!114 &1017044028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017044018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b588b3f5125279b4686184cde6354d83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInventory
+  pickupDistance: 1
 --- !u!1 &1056749857
 GameObject:
   m_ObjectHideFlags: 0
@@ -1528,7 +1544,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 10

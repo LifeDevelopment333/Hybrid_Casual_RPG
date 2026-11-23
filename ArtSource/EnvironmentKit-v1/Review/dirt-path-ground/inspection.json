@@ -1,0 +1,22 @@
+{
+  "name": "dirt-path-ground",
+  "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\dirt-path-ground\\tripo-out\\dirt-path-ground-v1-581242ab\\model.glb",
+  "source_dimensions": [
+    0.9073551297187805,
+    1.0,
+    0.05467499420046806
+  ],
+  "review_scale_factor": 8.0,
+  "provisional_dimensions_metres": [
+    7.258841037750244,
+    8.0,
+    0.4373999536037445
+  ],
+  "triangles": 22134,
+  "vertices": 13527,
+  "mesh_objects": 1,
+  "materials": [
+    "tripo_material_581242ab-1f69-4b36-9b5e-0ce167406ba5"
+  ],
+  "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+}

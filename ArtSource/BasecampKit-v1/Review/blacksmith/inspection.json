@@ -1,0 +1,22 @@
+{
+  "name": "blacksmith",
+  "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\BasecampKit-v1\\Models\\blacksmith\\tripo-out\\blacksmith-v1-c72d2b75\\model.glb",
+  "source_dimensions": [
+    1.0,
+    0.9706457853317261,
+    0.8845400810241699
+  ],
+  "review_scale_factor": 4.0,
+  "provisional_dimensions_metres": [
+    4.0,
+    3.8825831413269043,
+    3.5381603240966797
+  ],
+  "triangles": 9499,
+  "vertices": 14156,
+  "mesh_objects": 1,
+  "materials": [
+    "tripo_material_c72d2b75-24d1-4c62-9cdd-3db40b4f796d"
+  ],
+  "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+}

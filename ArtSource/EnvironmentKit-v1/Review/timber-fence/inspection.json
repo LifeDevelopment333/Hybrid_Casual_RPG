@@ -1,0 +1,22 @@
+{
+  "name": "timber-fence",
+  "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\timber-fence\\tripo-out\\timber-fence-v1-87df74cc\\model.glb",
+  "source_dimensions": [
+    0.14759638905525208,
+    1.0,
+    0.3926164507865906
+  ],
+  "review_scale_factor": 4.0,
+  "provisional_dimensions_metres": [
+    0.5903855562210083,
+    4.0,
+    1.5704658031463623
+  ],
+  "triangles": 21876,
+  "vertices": 13216,
+  "mesh_objects": 1,
+  "materials": [
+    "tripo_material_87df74cc-8da1-4377-9d15-f1b457769d71"
+  ],
+  "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+}

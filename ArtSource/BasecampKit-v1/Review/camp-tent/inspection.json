@@ -1,0 +1,22 @@
+{
+  "name": "camp-tent",
+  "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\BasecampKit-v1\\Models\\camp-tent\\tripo-out\\camp-tent-v1-3e22fcb8\\model.glb",
+  "source_dimensions": [
+    0.9921722412109375,
+    1.0,
+    0.8904109001159668
+  ],
+  "review_scale_factor": 5.0,
+  "provisional_dimensions_metres": [
+    4.9608612060546875,
+    5.0,
+    4.452054977416992
+  ],
+  "triangles": 8921,
+  "vertices": 10723,
+  "mesh_objects": 1,
+  "materials": [
+    "tripo_material_3e22fcb8-f3c7-4667-8e79-bd6a0d6661df"
+  ],
+  "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+}

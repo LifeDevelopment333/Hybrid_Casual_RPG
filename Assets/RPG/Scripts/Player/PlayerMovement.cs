@@ -4,35 +4,40 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("옵션")]
-    [SerializeField] private float moveSpeed = 4f;
     [SerializeField] private float turnSpeed = 360f;
     [SerializeField] private float acceleration = 20f;
 
     [Header("참조")]
     [SerializeField] private Transform mainCam;
-    [SerializeField] private CharacterController characterController;
     [SerializeField] private VirtualJoystick joystick;
     [SerializeField] private Animator animator;
+    private CharacterController characterController;
+    private CharacterStatus status;
     private PlayerAuto playerAuto;
 
     private Vector3 moveDirection;
     private Vector3 horizontalVelocity;
-    private float verticalSpeed = -2f;      // 낙하 속도
-
+    private readonly float verticalSpeed = -2f;      // 낙하 속도
     private static readonly int Speed = Animator.StringToHash("Speed");
 
     private void Awake()
     {
+        status = GetComponent<CharacterStatus>();
+        characterController = GetComponent<CharacterController>();
+        playerAuto = transform.GetComponent<PlayerAuto>();
+
         if (mainCam == null)
             mainCam = Camera.main.transform;
 
-        if(characterController == null)
-            characterController = transform.GetComponent<CharacterController>();
-
         if(animator == null)
             animator = GetComponentInChildren<Animator>();
+    }
 
-        playerAuto = transform.GetComponent<PlayerAuto>();
+    public void Reset()
+    {
+        moveDirection = Vector3.zero;
+        horizontalVelocity = Vector3.zero;
+        animator.SetFloat(Speed, 0);
     }
 
     private void Update()
@@ -58,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
                 moveDirection = autoDirection;
         }
 
-        horizontalVelocity = Vector3.MoveTowards(horizontalVelocity, moveDirection * moveSpeed, acceleration * Time.deltaTime);
+        horizontalVelocity = Vector3.MoveTowards(horizontalVelocity, moveDirection * status.MoveSpeed, acceleration * Time.deltaTime);
 
         // 캐릭터 회전
         if (moveDirection.sqrMagnitude > 0.001f)
@@ -68,6 +73,6 @@ public class PlayerMovement : MonoBehaviour
         characterController.Move((horizontalVelocity + Vector3.up * verticalSpeed) * Time.deltaTime);
 
         float actualSpeed = Vector3.ProjectOnPlane(characterController.velocity, Vector3.up).magnitude;
-        if(animator != null) animator.SetFloat(Speed, Mathf.Clamp01(actualSpeed / moveSpeed), 0.1f, Time.deltaTime);
+        if(animator != null) animator.SetFloat(Speed, Mathf.Clamp01(actualSpeed / status.MoveSpeed), 0.1f, Time.deltaTime);
     }
 }

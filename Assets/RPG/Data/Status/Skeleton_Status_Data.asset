@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e8e1299f8a17a43baabee8e9b279eb, type: 3}
+  m_Name: Skeleton_Status_Data
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterStatusData
+  maxHp: 100
+  maxMp: 50
+  attackDamage: 10
+  defense: 0
+  moveSpeed: 2
+  attackSpeed: 1
+  hpRegen: 0
+  mpRegen: 0
+  accuracy: 1
+  criticalChance: 0
+  criticalDamage: 0
+  attackRange: 1.5
+  attackCooldown: 2

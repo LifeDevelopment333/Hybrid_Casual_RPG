@@ -1,0 +1,26 @@
+[
+  {
+    "name": "grass-ground",
+    "width": 8
+  },
+  {
+    "name": "dirt-path-ground",
+    "width": 8
+  },
+  {
+    "name": "oak-tree",
+    "width": 5
+  },
+  {
+    "name": "granite-rock",
+    "width": 3
+  },
+  {
+    "name": "timber-fence",
+    "width": 4
+  },
+  {
+    "name": "camp-gateway",
+    "width": 5
+  }
+]

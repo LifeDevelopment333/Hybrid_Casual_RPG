@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class PlayerAuto : MonoBehaviour
 {
+    // 캐릭터 스테이터스
+    private CharacterStatus status;
+
     [Header("옵션")]
     [SerializeField] private float detectionRadius = 18f;
-    [SerializeField] private float attackRange = 2f;
     [SerializeField, Range(0f, 1f)] float hitFraction = 0.45f;
-    [SerializeField] private float attackCooldown = 0.15f;
-    [SerializeField] private float attackDamage = 50f;
     [SerializeField] private float turnSpeed = 360f;
 
     [Header("참조")]
@@ -19,10 +19,26 @@ public class PlayerAuto : MonoBehaviour
     private bool hitChecked = false;
     private bool isAttacking = false;
 
+    private readonly int Locomotion = Animator.StringToHash("Base Layer.Locomotion");
+    private readonly int AutoAttack = Animator.StringToHash("Base Layer.AutoAttack");
+    private readonly int AttackSpeed = Animator.StringToHash("AttackSpeed");
+
     private void Awake()
     {
         if(animator == null)
             animator = GetComponentInChildren<Animator>();
+
+        status = GetComponent<CharacterStatus>();
+    }
+
+    public void Reset()
+    {
+        target = null;
+        isAttacking = false;
+        hitChecked = false;
+        nextAttackTime = 0f;
+
+        animator.Play(Locomotion, 0);
     }
 
     private Monster FindTarget()
@@ -74,7 +90,7 @@ public class PlayerAuto : MonoBehaviour
 
         Vector3 offset = Vector3.ProjectOnPlane(target.transform.position - transform.position, Vector3.up);
 
-        if (offset.sqrMagnitude > (attackRange * attackRange))
+        if (offset.sqrMagnitude > (status.AttackRange * status.AttackRange))
             return offset.normalized;
 
         // 공격사거리 각도내에 부드럽게 위치하도록 회전
@@ -105,7 +121,9 @@ public class PlayerAuto : MonoBehaviour
 
         transform.rotation = Quaternion.LookRotation(offset, Vector3.up);
 
-        animator.CrossFadeInFixedTime("Base Layer.AutoAttack", 0.05f, 0, 0f);
+        animator.SetFloat(AttackSpeed, status.AttackSpeed);
+
+        animator.CrossFadeInFixedTime(AutoAttack, 0.05f, 0, 0f);
     }
 
     private void UpdateAttack()
@@ -127,9 +145,9 @@ public class PlayerAuto : MonoBehaviour
             {
                 Vector3 offset = Vector3.ProjectOnPlane(target.transform.position - transform.position, Vector3.up);
 
-                if (offset.sqrMagnitude <= (attackRange * attackRange))
+                if (offset.sqrMagnitude <= (status.AttackRange * status.AttackRange))
                 {
-                    target.TakeDamage(attackDamage);
+                    target.TakeDamage(status);
                 }
             }
         }
@@ -141,9 +159,9 @@ public class PlayerAuto : MonoBehaviour
     private void EndAttack()
     {
         isAttacking = false;
-        nextAttackTime = Time.time + attackCooldown;
+        nextAttackTime = Time.time + status.AttackCooldown;
 
-        animator.CrossFadeInFixedTime("Base Layer.Locomotion", 0.25f);
+        animator.CrossFadeInFixedTime(Locomotion, 0.25f);
     }
 
     private void Cancle()

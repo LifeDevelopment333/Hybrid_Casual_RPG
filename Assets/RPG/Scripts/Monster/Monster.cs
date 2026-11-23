@@ -3,20 +3,19 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public abstract class Monster : MonoBehaviour
 {
-    [SerializeField] private float HP = 100f;
-    private float hp;
-    [SerializeField] private float moveSpeed = 4f;
-    [SerializeField] private float turnSpeed = 360f;
+    private CharacterStatus status;
 
-    [SerializeField] private float attackRange = 1.5f;
-    [SerializeField] private float attackDamage = 10f;
-    [SerializeField] private float attackCooldown = 0.9f;
+    private float hp;
+    [SerializeField] private float turnSpeed = 360f;
     [SerializeField, Range(0f, 1f)] private float hitFraction = 0.5f;
+    [SerializeField] private DropTable dropTable;
+    [SerializeField, Min(0)] private int experienceReward = 10;
 
     private CharacterController characterController;
     private Animator animator;
     private Transform target;
     private PlayerHealth targetHealth;
+    private PlayerLevel targetLevel;
 
     private bool isDead;
     public bool IsDead => isDead;
@@ -26,17 +25,22 @@ public abstract class Monster : MonoBehaviour
 
     private bool isAttacking;
     private bool hitChecked;
+    private bool canReactToHit = true;
+    private bool isHitState;
     private float nextAttackTime;
 
     private static readonly int Speed = Animator.StringToHash("Speed");
     private static readonly int Locomotion = Animator.StringToHash("Base Layer.Locomotion");
     private static readonly int Death = Animator.StringToHash("Base Layer.Death");
     private static readonly int Attack = Animator.StringToHash("Base Layer.Attack");
+    private static readonly int Hit = Animator.StringToHash("Base Layer.Hit");
+    private static readonly int AttackSpeed = Animator.StringToHash("AttackSpeed");
 
     protected virtual void Awake()
     {
         characterController = GetComponent<CharacterController>();
         animator = GetComponentInChildren<Animator>();
+        status = GetComponent<CharacterStatus>();
     }
 
     protected virtual void Update()
@@ -54,8 +58,21 @@ public abstract class Monster : MonoBehaviour
         }
         if (target == null) return;
 
+        if(isHitState == true)
+        {
+            AnimatorStateInfo state = animator.GetCurrentAnimatorStateInfo(0);
+
+            if (state.fullPathHash == Hit && state.normalizedTime >= 1f)
+            {
+                isHitState = false;
+                animator.CrossFadeInFixedTime(Locomotion, 0.25f);
+            }
+
+            return;
+        }
+
         moveDirection = Vector3.ProjectOnPlane(target.position - transform.position, Vector3.up);
-        moveDirection = moveDirection.sqrMagnitude > (attackRange * attackRange) ? moveDirection.normalized : Vector3.zero;
+        moveDirection = moveDirection.sqrMagnitude > (status.AttackRange * status.AttackRange) ? moveDirection.normalized : Vector3.zero;
 
         if(isAttacking)
         {
@@ -71,16 +88,19 @@ public abstract class Monster : MonoBehaviour
         if (moveDirection.sqrMagnitude > 0.001f)
             transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(moveDirection), turnSpeed * Time.deltaTime);
 
-        characterController.Move((moveDirection * moveSpeed + Vector3.up * verticalSpeed) * Time.deltaTime);
+        characterController.Move((moveDirection * status.MoveSpeed + Vector3.up * verticalSpeed) * Time.deltaTime);
 
         float actualSpeed = Vector3.ProjectOnPlane(characterController.velocity, Vector3.up).magnitude;
-        if (animator != null) animator.SetFloat(Speed, Mathf.Clamp01(actualSpeed / moveSpeed), 0.1f, Time.deltaTime);
+        if (animator != null) animator.SetFloat(Speed, Mathf.Clamp01(actualSpeed / status.MoveSpeed), 0.1f, Time.deltaTime);
     }
 
     private void StartAttack()
     {
         isAttacking = true;
         hitChecked = false;
+
+        animator.SetFloat(AttackSpeed, status.AttackSpeed);
+
         animator.CrossFadeInFixedTime(Attack, 0.05f, 0);
     }
 
@@ -102,9 +122,9 @@ public abstract class Monster : MonoBehaviour
             {
                 Vector3 offset = Vector3.ProjectOnPlane(target.transform.position - transform.position, Vector3.up);
 
-                if (offset.sqrMagnitude <= (attackRange * attackRange))
+                if (offset.sqrMagnitude <= (status.AttackRange * status.AttackRange))
                 {
-                    targetHealth.TakeDamage(attackDamage);
+                    targetHealth.TakeDamage(status);
                 }
             }
         }
@@ -112,7 +132,8 @@ public abstract class Monster : MonoBehaviour
         if(progress >= 1f)
         {
             isAttacking = false;
-            nextAttackTime = Time.time + attackCooldown;
+            canReactToHit = true;
+            nextAttackTime = Time.time + status.AttackCooldown;
             animator.CrossFadeInFixedTime(Locomotion, 0.25f);
         }
     }
@@ -121,12 +142,15 @@ public abstract class Monster : MonoBehaviour
     {
         this.target = target;
         targetHealth = target.GetComponent<PlayerHealth>();
+        targetLevel = target.GetComponent<PlayerLevel>();
 
         // 초기화
-        hp = HP;
+        hp = status.MaxHp;
         isDead = false;
         isAttacking = false;
         hitChecked = false;
+        canReactToHit = true;
+        isHitState = false;
         nextAttackTime = 0f;
         moveDirection = Vector3.zero;
 
@@ -135,16 +159,32 @@ public abstract class Monster : MonoBehaviour
         animator.Play(Locomotion, 0, 0f);
     }
 
-    public virtual void TakeDamage(float damage)
+    public virtual void TakeDamage(CharacterStatus attacker)
     {
-        if (isDead == true || damage <= 0f) return;
+        if (isDead == true || attacker == null) return;
+
+        float damage = DamageCalculator.Calculate(attacker, status);
+
+        if (damage <= 0)
+            return;
 
         hp -= damage;
 
-        if (hp <= 0f) Die();
+        if (hp <= 0f)
+        {
+            Die();
+
+            return;
+        }
+
+        if(canReactToHit)
+        {
+            canReactToHit = false;
+            isAttacking = false;
+            isHitState = true;
+            animator.CrossFadeInFixedTime(Hit, 0.25f);
+        }
     }
-
-
 
     public virtual void Die()
     {
@@ -158,7 +198,30 @@ public abstract class Monster : MonoBehaviour
 
         animator.CrossFadeInFixedTime(Death, 0.05f, 0, 0);
 
-        // 임시
-        //gameObject.SetActive(false);
+        targetLevel.AddExperience(experienceReward);
+        DropReward();
+    }
+
+    private void DropReward()
+    {
+        if (dropTable == null) return;
+
+        RewardEntry reward = dropTable.Roll();
+        if (reward == null) return;
+
+        int amount = reward.RollAmount();
+
+        ItemData item = reward.itemData;
+        if (item == null) return;
+
+        if (item.prefab != null)
+        {
+            Vector3 dropPosition = Vector3.ProjectOnPlane(transform.position, Vector3.up);
+            GameObject instance = Instantiate(item.prefab, dropPosition, item.prefab.transform.rotation);
+            DroppedItem droppedItem = instance.AddComponent<DroppedItem>();
+            droppedItem.Initialize(item, amount);
+        }
+
+        Debug.Log("드랍아이템 : " + item.itemName + " : " + amount);
     }
 }

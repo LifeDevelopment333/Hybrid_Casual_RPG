@@ -1,0 +1,22 @@
+{
+  "name": "oak-tree",
+  "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\oak-tree\\tripo-out\\oak-tree-v1-29a6781f\\model.glb",
+  "source_dimensions": [
+    0.6764017343521118,
+    1.0,
+    0.887386679649353
+  ],
+  "review_scale_factor": 5.0,
+  "provisional_dimensions_metres": [
+    3.3820085525512695,
+    5.0,
+    4.436933517456055
+  ],
+  "triangles": 22888,
+  "vertices": 22981,
+  "mesh_objects": 1,
+  "materials": [
+    "tripo_material_29a6781f-7481-48d0-babe-727448d5900a"
+  ],
+  "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+}

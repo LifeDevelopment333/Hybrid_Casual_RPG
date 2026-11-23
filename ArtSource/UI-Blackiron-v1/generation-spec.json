@@ -1,0 +1,87 @@
+{
+  "date": "2026-11-24",
+  "style": "흑철과 잿불 / A",
+  "sourceReference": "ArtSource/UIConcepts-v3-LineageLike-Portrait/A-blackiron-ember-portrait.png",
+  "outputRoot": "Assets/RPG/ART/UI/Blackiron-v1",
+  "basePrompt": "Use case: ui-mockup production raster game asset extraction. Input image is a STYLE REFERENCE ONLY: approved \"A / 흑철과 잿불\" game UI. Rebuild isolated UI components matching its near-black iron, softly mottled charcoal interior, narrow worn bronze/brass double-line edges, tiny understated corner ornaments, subdued warm gold highlights and mature semi-realistic painted metal. No game screenshot, no environment, no character, no presentation frame. Output a STRICT REGULAR GRID SPRITE SHEET on a genuinely TRANSPARENT alpha background. The entire outside area and gutters are completely alpha=0, NOT a checkerboard, NOT white/black backdrop. Grid lines invisible. Every component isolated in its own equal-size cell, centered, with generous transparent padding at least 12% of cell width/height on all sides. No part touches adjacent cell. Absolutely NO TEXT, letters, numbers, labels, headings or watermarks anywhere. Face-on 2D orthographic UI assets, crisp refined metal edges, consistent top-left soft lighting, no angled perspective. Match palette and material of approved reference. Background remains genuinely transparent. Only the desired inside of dark panel/button shapes is dark opaque; open frame centers are transparent where specified. Keep decorative outlines thin and practical. No global cast shadows, no glow spilling into other cells. Do not include icons inside empty buttons or slots.",
+  "sheets": [
+    {
+      "id": "panels",
+      "cols": 2,
+      "rows": 3,
+      "names": [
+        "panel-main",
+        "panel-section",
+        "panel-stat-row",
+        "panel-item-detail",
+        "frame-portrait",
+        "plaque-title"
+      ],
+      "prompt": "EXACTLY 2 columns x 3 rows = 6 equal cells, read left to right top to bottom. Use a square canvas. Cell1 large dark rectangular main menu panel, thin bronze edge, restrained engraved corners, plain seamless dark center suitable for resizing. Cell2 smaller dark rectangular section panel, thin bronze border, plain center. Cell3 wide horizontal stat row empty dark rectangular backing, thin bronze border, no plus button. Cell4 wide dark tooltip/item-detail card, bronze frame, no contents. Cell5 square portrait FRAME ONLY with thin bronze bevel and one small corner flourish, fully transparent empty center. Cell6 wide clipped-corner title plaque, dark iron filled center and bronze border, no title text. Maintain 12% cell padding, wide items width:height 2.7:1 except main panel 1.4:1 and portrait square. Assets must stay separate."
+    },
+    {
+      "id": "controls",
+      "cols": 4,
+      "rows": 4,
+      "names": [
+        "button-normal",
+        "button-highlighted",
+        "button-pressed",
+        "button-disabled",
+        "slot-common",
+        "slot-rare",
+        "slot-epic",
+        "slot-selected",
+        "bar-track",
+        "bar-hp-fill",
+        "bar-exp-fill",
+        "bar-enemy-fill",
+        "joystick-base",
+        "joystick-knob",
+        "tab-normal",
+        "tab-selected"
+      ],
+      "prompt": "EXACTLY 4 columns x 4 rows = 16 equal cells on a square canvas. Row1 four matching EMPTY rectangular buttons width:height 2.4:1, with thin bronze bevel: normal warm dark bronze, highlighted lighter gold, pressed dark inset bronze, disabled desaturated charcoal. Row2 four EMPTY SQUARE equipment slot borders with dark inner backing: common gray metal; rare subtle blue edge; epic subtle violet edge; selected thin warm gold edge. No items in slots. Row3 four matching WIDE horizontal bar components width:height 5:1: dark empty bronze-edged HP bar track; red FULL fill strip only without border; gold FULL EXP fill strip only without border; narrow crimson FULL enemy-health fill strip only without border. Each fill is 100% full length, NO partial fill or numbers. Row4 circular translucent joystick base ring; circular bronze-gray joystick knob; empty rectangular dark menu tab normal; same rectangular menu tab selected with burgundy interior and gold bottom edge. No symbols or writing on controls. Precise 12% padding and cell separation."
+    },
+    {
+      "id": "icons",
+      "cols": 4,
+      "rows": 4,
+      "names": [
+        "icon-battle",
+        "icon-equipment",
+        "icon-bag",
+        "icon-stats",
+        "icon-health",
+        "icon-attack",
+        "icon-defense",
+        "icon-movement",
+        "icon-attack-speed",
+        "icon-critical",
+        "icon-plus",
+        "icon-reset",
+        "icon-close",
+        "icon-back",
+        "icon-gold",
+        "icon-auto-combat"
+      ],
+      "prompt": "EXACTLY 4 columns x 4 rows = 16 equal square cells on a square canvas. Isolated ICONS ONLY, no frames, no dark filled backplates. Large central icon fits within inner 65% cell. Row1: crossed swords; medieval helmet; drawstring leather bag; ascending three bars. Row2: simple heart medallion; single sword; heater shield; leather boot with tiny motion stroke. Row3: two fast sword slash strokes; six-point critical impact star; simple plus sign made of aged brass; circular reset arrow. Row4: simple close X in brass; simple leftward back chevron in brass; two or three gold coins; two circular chasing arrows surrounding a small sword (automatic combat status). Clear simplified silhouettes, ivory/silver and muted bronze materials, mature refined game UI, no thick cartoon outlines. Plus X and arrow are interface symbols not typography. Fully transparent background around each icon."
+    },
+    {
+      "id": "equipment",
+      "cols": 4,
+      "rows": 2,
+      "names": [
+        "item-greatsword",
+        "item-leather-hood",
+        "item-leather-armor",
+        "item-leather-gloves",
+        "item-leather-legs",
+        "item-ring",
+        "item-necklace",
+        "item-earring"
+      ],
+      "prompt": "EXACTLY 4 columns x 2 rows = 8 equal cells on a landscape 2:1 canvas. Isolated INVENTORY ITEM ICONS ONLY with transparent background and NO slot frames or square backplates. Row1: broad warm steel greatsword with aged bronze crossguard and brown leather grip, dark brown leather hood, layered brown leather chest armor with steel shoulder plate, pair of worn brown leather gloves. Row2: dark brown leather trousers, aged bronze ring with subtle engraved band, bronze necklace with small pale stone pendant, small bronze drop earring with pale gem. Fine semi-realistic hand-painted inventory art, strong clear silhouettes, consistent relative presentation, subtle top-left highlights, no outside shadow or glow. Each item wholly inside inner 65% cell, no clipping. No additional objects or character anatomy."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+통합 장비 드랍 — 봉인된 장비 보따리 v1
+
+제작 방식: built-in image_gen. 모델 및 UI 구현이 아닌 디자인 검토용 시안.
+단독 모델 참조: References/equipment-bundle-v1.png
+연출/UI 참조: References/equipment-drop-reveal-flow-v1.png
+트라이포에는 단독 모델 참조 이미지만 사용. 연출/UI 이미지는 모델 생성 입력으로 사용하지 않음.
+
+트라이포 요청 문구
+Create ONE sealed equipment loot bundle matching the reference for a stylized fantasy RPG. This universal pickup represents weapons, armor and accessories alike. A squat rounded rectangular warm-ivory heavy canvas parcel, broad muted royal-blue crossed leather straps, one attached antique-brass hexagonal front clasp with an abstract diamond rune. Thick compact folded cloth corners, broad seams, restrained wear, medium-detail sculpted forms and hand-painted game textures. Preserve the closed silhouette and complete the unseen back and underside consistently. Stable flat bottom. Keep every part sturdy and attached. No visible contents, weapons, armor, shoulder straps, thin dangling cloth, loose ribbons, background, ground, pedestal, text, particles, glow or baked cast shadows. Produce only the single closed bundle.
+
+제안 동작
+1. 몬스터 처치 후 장비 종류에 관계없이 동일한 보따리 모델이 드랍된다.
+2. 획득한 보따리는 가방 UI에 미확인 장비로 표시한다.
+3. 유저가 열기를 누르면 실제 장비 아이콘, 이름, 등급, 종류, 주요 옵션을 표시한다.
+4. 개봉 후 해당 슬롯은 식별된 실제 장비 아이콘으로 바뀐다.
+5. 한 보따리에는 장비 한 개를 넣는 구성을 기본 제안한다.
+6. 실제 장비 데이터는 드랍 시 확정하고 UI 열기는 정보 공개로 처리할 것을 제안한다. 중복 개봉과 재추첨을 방지한다.
+
+시안 속 개척자의 장검 / 희귀 / 공격력 +18은 예시이며 실제 밸런스 데이터가 아니다.
+실제 Unity 적용, 모델 생성 및 게임 카메라 가독성 검증은 아직 수행하지 않았다.

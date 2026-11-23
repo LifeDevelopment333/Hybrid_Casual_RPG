@@ -1,0 +1,22 @@
+{
+  "name": "grass-ground",
+  "source": "C:\\Unity\\Hybrid_Casual_RPG\\ArtSource\\EnvironmentKit-v1\\Models\\grass-ground\\tripo-out\\grass-ground-v1-7c27f5a0\\model.glb",
+  "source_dimensions": [
+    0.9978649616241455,
+    1.0,
+    0.05194535106420517
+  ],
+  "review_scale_factor": 8.0,
+  "provisional_dimensions_metres": [
+    7.982919692993164,
+    8.0,
+    0.41556280851364136
+  ],
+  "triangles": 22940,
+  "vertices": 12953,
+  "mesh_objects": 1,
+  "materials": [
+    "tripo_material_7c27f5a0-3ca0-44db-af4d-9f014652c4fb"
+  ],
+  "note": "Scale is provisional. Colliders, navigation and gameplay setup are not included."
+}
