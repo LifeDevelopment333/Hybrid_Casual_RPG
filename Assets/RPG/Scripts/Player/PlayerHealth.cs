@@ -45,7 +45,15 @@ public class PlayerHealth : MonoBehaviour
     {
         if (isDead == true || attacker == null) return;
 
-        hp -= DamageCalculator.Calculate(attacker, status);
+        DamageResult result = DamageCalculator.Calculate(attacker, status);
+
+        hp -= result.Amount;
+
+        //DamageTextManager.Instance.Show(result, new Vector3(
+        //    characterController.bounds.center.x,
+        //    characterController.bounds.max.y,
+        //    characterController.bounds.center.z
+        //    ));
 
         if (hp <= 0f) Die();
     }

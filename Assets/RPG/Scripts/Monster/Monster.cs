@@ -163,12 +163,19 @@ public abstract class Monster : MonoBehaviour
     {
         if (isDead == true || attacker == null) return;
 
-        float damage = DamageCalculator.Calculate(attacker, status);
+        DamageResult damage = DamageCalculator.Calculate(attacker, status);
+        
 
-        if (damage <= 0)
+        if (damage.Amount <= 0)
             return;
 
-        hp -= damage;
+        hp -= damage.Amount;
+
+        DamageTextManager.Instance.Show(damage, new Vector3(
+            characterController.bounds.center.x,
+            characterController.bounds.max.y,
+            characterController.bounds.center.z
+            ));
 
         if (hp <= 0f)
         {
