@@ -72,14 +72,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a248bc8da685841b04549cdef6a3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Skeleton
-  HP: 100
-  moveSpeed: 2
   turnSpeed: 360
-  attackRange: 1.5
-  attackDamage: 10
-  attackCooldown: 1
   hitFraction: 0.8
   dropTable: {fileID: 11400000, guid: 72cd750bb701b124da009d32c405618f, type: 2}
+  experienceReward: 10
 --- !u!114 &-2770421064577458331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +88,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f003623bc1387c042a1d88a46847520a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStatus
-  modifiers: []
   baseData: {fileID: 11400000, guid: 08e27eeb0a9698943921613ecc8bbcf2, type: 2}
 --- !u!1001 &5912041283902437010
 PrefabInstance:
@@ -174,6 +169,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.6019063
       objectReference: {fileID: 0}
+    - target: {fileID: 5056023082818823254, guid: a6d4bbf43b02bc64692932784e65fd7c, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5056023082818823254, guid: a6d4bbf43b02bc64692932784e65fd7c, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 08b0e53dac2b23f47ba8789285bf8dbb, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
